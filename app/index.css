@@ -18,3 +18,27 @@ ul{
   font-weight: bold;
   cursor: pointer;
 }
+
+.popular-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.popular-item{
+margin:20px;
+text-align: center;
+}
+.avatar {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.space-list-items {
+  margin-bottom: 7px;
+}
+.popular-rank {
+  font-size: 20px;
+  margin: 10px;
+}
