@@ -1,13 +1,24 @@
-import React, { Component } from 'react';
-import Popular from './Popular.js';
+var React = require('react');
+var ReactRouter = require('react-router-dom');
+var Router = ReactRouter.BrowserRouter;
+var Route = ReactRouter.Route;
+var Switch = ReactRouter.Switch;
+var Nav = require('./Nav');
+// var Home = require('./Home');
+// var Battle = require('./Battle');
 
-class App extends Component {
+
+var Popular = require('./Popular');
+class App extends React.Component {
   render() {
     return (
+      <Router>
       <div className="container">
-        <Popular />
-
+      <Nav />
+      <Route path='/popular' component={Popular} />
+      
       </div>
+      </Router>
     );
   }
 }
