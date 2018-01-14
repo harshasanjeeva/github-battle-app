@@ -18,7 +18,8 @@
   },
   "scripts": {
     "create": "webpack",
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "build":"NODE_ENV='production' webpack -p"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
