@@ -12,7 +12,9 @@ function Profile(props){
         <div>
         <PlayerPreview avatar = {info.avatar.url} username={info.login}>
         <ul className='space-list-items'>
-        {info.name && <li>{info.name}</li>}
+        {
+            info.name && <li>{info.name}
+        </li>}
         {info.location && <li>{info.location}</li>}
         {info.company && <li>{info.company}</li>}
         <li>Followers: {info.followers}</li>
